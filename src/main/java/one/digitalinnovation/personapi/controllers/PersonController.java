@@ -25,11 +25,6 @@ import java.util.List;
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonController {
 
-    @PostMapping
-    public String title(){
-        return " TÍTULOOO ";
-    }
-
     private final PersonService personService;
 
     @PostMapping
