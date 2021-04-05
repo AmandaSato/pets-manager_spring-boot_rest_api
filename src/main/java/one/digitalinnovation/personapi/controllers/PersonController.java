@@ -22,8 +22,22 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/people")
+
 @AllArgsConstructor(onConstructor = @__(@Autowired))
+// @Autowired faz uma injeção da implementação
+
 public class PersonController {
+
+    //
+//    @GetMapping
+//    public ModelAndView people(){
+//
+//        final ModelAndView modelAndView = new ModelAndView();
+//        modelAndView.setViewName("people");
+//
+//        return modelAndView;
+//    }
+    //
 
     private final PersonService personService;
 

@@ -13,6 +13,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+// Cria-se a Classe de Serviços como uma Boa Prática, para realizar separação de responsabilidades.
+
+// Não cabe aplicar Regras de Negócio do nosso Controller. Por isso, criamos uma classe responsável
+// unicamente por essa função.
+
 @Service
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonService {
